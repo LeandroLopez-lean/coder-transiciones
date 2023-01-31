@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: black 3px solid;
+    border-radius: 4px;
+}
+
+/***************GRADIENTES*****************/
+
+.cajaA {
+    background: linear-gradient(to right, #283048, #859398);
+}
+
+/*************Su forma predeterminada es de arriba hacia abajo***********/
+
+.cajaB {
+    background: linear-gradient(red, yellow);
+}
+
+.cajaC {
+    background-image: radial-gradient(#3D7EAA, #FFE47A);
+}
+
+/*******TRANSFORMACIONES********/
+
+
+.cajaUno {
+    background-color: red;
+    transform: translate(25px, 10px);
+    /*el primer valor es X despues Y*/
+}
+
+/*ROTACION*/
+
+.cajaDos {
+    background-color: #3D7EAA;
+    transform: rotate(30deg);
+}
+
+/*ESCALA UN ELEMENTO*/
+
+.cajaTres {
+    background-color: #283048;
+    transform: scale(1.5, 0.5);
+}
+
+/*El primer valor es el ancho (eje X) */
+/*El segundo valor es el alto (eje Y) */
+/*valores mayores a 1 agrandan */
+/*Valores entre 1 y 0 achican */
+/* Valores negativos escalan dado vuelta */
+
+/************SESGAR UN ELEMENTO *************/
+
+.cajaCuatro {
+    background-color: aqua;
+    transform: skew(10deg, 20deg);
+}
+
+/***********TRANSICIONES****************/
+/*Las pseudo-clases: nos permiten aplicar estilos a determinados elementos dependiendo algunos factores externos*/
+
+/*HOVER: SE ACTIVA CON EL PUNTERO DEL MOUSE*/
+
+/*ejemplo*/
+
+.divUno {
+    background-color: #283048;
+}
+
+.divUno:hover {
+    background-color: #3D7EAA;
+    height: 320px;
+    width: 320px;
+    transition: all 4s;
+}
+
+.divDos {
+    background-color: #859398;
+}
+
+.divDos:hover {
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zooplus.es%2Fmagazine%2Fgatos%2Fgatitos&psig=AOvVaw3b_VbZGTU13lNnzu7nX3Cx&ust=1675250093038000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCOjMyo3X8fwCFQAAAAAdAAAAABAD");
+}
